@@ -1,0 +1,233 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Grid</title>
+        <link rel="author" href="humans.txt">
+	
+		<!-- ************************* -->
+
+		<!-- STYLES INCLUDED -->
+
+		<!-- ************************* -->
+
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="../css/basic.css" />
+		<link rel="stylesheet" type="text/css" href="../css/grid.css" />
+
+		<!-- ************************* -->
+
+		<!-- CUSTOM PAGE STYLES -->
+
+		<!-- ************************* -->
+
+		<style>
+
+			h1{
+
+				margin: 0;
+				text-align: center;
+				padding: 20px;
+
+			}
+			
+			.column{
+
+				border: solid;
+
+			}
+
+		</style>
+
+    </head>
+    <body>
+        
+        <div class="grid">
+
+        	<!-- ************************* -->
+        	
+			<!-- DEFINE ONE ROW WITH DIFFERENT COLUMNS INSIDE IT -->
+			<!-- ONE ROW CAN CONTAIN A MAXIMUM OF TWELVE COLUMNS -->
+
+			<!-- ************************* -->
+
+			<div class="row">
+
+        		<div class="two column">
+
+        			<h1>width 2</h1>
+
+        		</div>
+
+				<div class="two column">
+
+					<h1>width 2</h1>
+
+				</div>
+
+				<div class="two column">
+
+					<h1>width 2</h1>
+
+				</div>
+
+				<div class="two column">
+
+					<h1>width 2</h1>
+
+				</div>
+
+				<div class="two column">
+
+					<h1>width 2</h1>
+
+				</div>
+
+				<div class="two column">
+
+					<h1>width 2</h1>
+
+				</div>
+
+        	</div>
+
+        	<div class="row">
+
+        		<div class="eight column">
+
+        			<h1>width 8</h1>
+
+        		</div>
+
+				<div class="four column">
+
+					<h1>width 4</h1>
+
+				</div>
+
+        	</div>
+
+        	<div class="row">
+
+        		<div class="two column">
+
+        			<h1>width 2</h1>
+
+        		</div>
+
+				<div class="two column">
+
+					<h1>width 2</h1>
+
+				</div>
+
+				<div class="four column">
+
+					<h1>width 4</h1>
+
+				</div>
+
+				<div class="two column">
+
+					<h1>width 2</h1>
+
+				</div>
+
+				<div class="two column">
+
+					<h1>width 2</h1>
+
+				</div>
+
+        	</div>
+
+        	<div class="row">
+
+				<div class="four column">
+
+					<h1>width 4</h1>
+
+				</div>
+
+        		<div class="eight column">
+
+        			<h1>width 8</h1>
+
+        		</div>
+
+        	</div>
+
+        	<div class="row">
+
+				<div class="twelve column">
+
+					<h1>width 12</h1>
+
+				</div>
+
+        	</div>
+
+        	<!-- ************************* -->
+        	
+			<!-- COLUMNS CAN BE DEFINED WITH OFFSETS -->
+
+			<!-- ************************* -->
+
+			<div class="row">
+
+				<div class="block four column">
+
+					<h1>width 4 / offset 0</h1>
+
+				</div>
+
+        	</div>
+
+        	<div class="row">
+
+				<div class="block four column offset-two">
+
+					<h1>width 4 / offset 2</h1>
+
+				</div>
+
+        	</div>
+
+        	<div class="row">
+
+				<div class="block four column offset-four">
+
+					<h1>width 4 / offset 4</h1>
+
+				</div>
+
+        	</div>
+
+        	<div class="row">
+
+				<div class="block four column offset-six">
+
+					<h1>width 4 / offset 6</h1>
+
+				</div>
+
+        	</div>
+
+        	<div class="row">
+
+				<div class="block four column offset-eight">
+
+					<h1>width 4 / offset 8</h1>
+
+				</div>
+
+        	</div>
+	
+        </div>
+
+    </body>
+</html>

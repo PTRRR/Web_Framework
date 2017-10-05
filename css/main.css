@@ -1,0 +1,38 @@
+/*
+ * main.css
+ * —
+ * WHERE YOU PUT YOUR CODE
+ *
+ */
+
+body {
+	font-family: "Unica";
+	font-size: 1.5em;
+}
+
+/*
+ * media queries
+ * —
+ * WHERE YOU CHANGE YOUR LAYOUT
+ *
+ */
+
+@media (max-width: 480px) {
+
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+
+}
+
+@media (orientation: landscape) {
+
+}
+
+@media (orientation: portrait) {
+
+}

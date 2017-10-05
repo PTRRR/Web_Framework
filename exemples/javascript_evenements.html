@@ -1,0 +1,279 @@
+<!doctype html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Javascript</title>
+        <link rel="author" href="humans.txt">
+
+        <!-- ************************* -->
+
+		<!-- SCRIPTS INCLUDED -->
+
+		<!-- ************************* -->
+
+        <script src="../js/utils.js"></script>
+
+		<!-- ************************* -->
+
+		<!-- STYLES INCLUDED -->
+
+		<!-- ************************* -->
+
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="../css/basic.css" />
+		<link rel="stylesheet" type="text/css" href="../css/grid.css" />
+
+		<!-- ************************* -->
+
+		<!-- CUSTOM PAGE STYLES -->
+
+		<!-- ************************* -->
+
+		<style>
+
+			h3{
+
+				margin: 0;
+				text-align: center;
+				padding: 20px;
+
+			}
+
+			.column {
+
+				cursor: pointer;
+				position: relative;
+				min-height: 200px;
+
+			}
+
+			.column h3{
+
+				pointer-events: none;
+				position: absolute;
+				left: 50%;
+				top: 50%;
+
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+
+			}
+
+		</style>
+
+    </head>
+    <body>
+        
+        <div class="grid">
+        	
+        	<div class="row">
+
+        		<div class="click-random-color column two">
+
+        			<h3>Click</h3>
+
+        		</div>
+
+        		<div class="click-random-color column two">
+
+        			<h3>Click</h3>
+
+        		</div>
+
+        		<div class="click-random-color column two">
+
+        			<h3>Click</h3>
+
+        		</div>
+
+        		<div class="click-random-color column two">
+
+        			<h3>Click</h3>
+
+        		</div>
+
+        		<div class="click-random-color column two">
+
+        			<h3>Click</h3>
+
+        		</div>
+
+        		<div class="click-random-color column two">
+
+        			<h3>Click</h3>
+
+        		</div>
+
+        	</div>
+
+        	<div class="row">
+
+        		<div class="over-random-color column two">
+
+        			<h3>Over</h3>
+
+        		</div>
+
+        		<div class="over-random-color column two">
+
+        			<h3>Over</h3>
+
+        		</div>
+
+        		<div class="over-random-color column two">
+
+        			<h3>Over</h3>
+
+        		</div>
+
+        		<div class="over-random-color column two">
+
+        			<h3>Over</h3>
+
+        		</div>
+
+        		<div class="over-random-color column two">
+
+        			<h3>Over</h3>
+
+        		</div>
+
+        		<div class="over-random-color column two">
+
+        			<h3>Over</h3>
+
+        		</div>
+
+        	</div>
+
+        	<div class="row">
+
+        		<div class="move-random-color column two">
+
+        			<h3>Move</h3>
+
+        		</div>
+
+        		<div class="move-random-color column two">
+
+        			<h3>Move</h3>
+
+        		</div>
+
+        		<div class="move-random-color column two">
+
+        			<h3>Move</h3>
+
+        		</div>
+
+        		<div class="move-random-color column two">
+
+        			<h3>Move</h3>
+
+        		</div>
+
+        		<div class="move-random-color column two">
+
+        			<h3>Move</h3>
+
+        		</div>
+
+        		<div class="move-random-color column two">
+
+        			<h3>Move</h3>
+
+        		</div>
+
+        	</div>
+
+        </div>
+
+        <!-- ************************* -->
+
+		<!-- CUSTOM SCRIPT -->
+
+		<!-- ************************* -->
+
+		<script>
+			
+			// Retrieve all columns of the first row 
+
+			var click_random_color_elements = getElements(".click-random-color");
+
+			// Set some actions on each elements
+
+			forEachElement(click_random_color_elements, function (element){
+
+				// On click set a random color to these elements
+
+				element.on('click', function () {
+
+					// Set a random color (each color is composer of three values between 0 - 255)
+
+					var red = Math.floor(Math.random() * 255);
+					var green = Math.floor(Math.random() * 255);
+					var blue = Math.floor(Math.random() * 255);
+
+					this.style.background = "rgb(" + red + "," + green + "," + blue + ")";
+
+				});
+
+			});
+
+			// Retrieve all columns of the second row 
+
+			var over_random_color_elements = getElements(".over-random-color");
+
+			// Set some actions on each elements
+
+			forEachElement(over_random_color_elements, function (element){
+
+				// On over set a random color to these elements
+
+				element.on('mouseover', function () {
+
+					// Set a random color (each color is composer of three values between 0 - 255)
+
+					var red = Math.floor(Math.random() * 255);
+					var green = Math.floor(Math.random() * 255);
+					var blue = Math.floor(Math.random() * 255);
+
+					this.style.background = "rgb(" + red + "," + green + "," + blue + ")";
+
+				});
+
+			});
+
+			// Retrieve all columns of the third row 
+
+			var move_random_color_elements = getElements(".move-random-color");
+
+			// Set some actions on each elements
+
+			forEachElement(move_random_color_elements, function (element){
+
+				// On out set a random color to these elements
+
+				element.on('mousemove', function () {
+
+					// Set a random color (each color is composer of three values between 0 - 255)
+
+					var red = Math.floor(Math.random() * 255);
+					var green = Math.floor(Math.random() * 255);
+					var blue = Math.floor(Math.random() * 255);
+
+					this.style.background = "rgb(" + red + "," + green + "," + blue + ")";
+
+				});
+
+			});
+
+		</script>
+        
+    </body>
+</html>

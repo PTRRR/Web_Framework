@@ -1,0 +1,410 @@
+<!doctype html>
+<html>
+    <head>
+
+        <meta charset="utf-8">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Site exemple</title>
+        <link rel="author" href="humans.txt">
+	
+		<!-- ************************* -->
+
+		<!-- STYLES INCLUDED -->
+
+		<!-- ************************* -->
+
+        <link rel="stylesheet" type="text/css" href="../css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="../fonts/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="../css/basic.css" />
+		<link rel="stylesheet" type="text/css" href="../css/grid.css" />
+
+		<!-- ************************* -->
+
+		<!-- CUSTOM PAGE STYLES -->
+
+		<!-- ************************* -->
+
+		<style>
+
+			#init{
+
+				position: sticky;
+				position: -webkit-sticky;
+				z-index: 0;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 100vh;
+
+			}
+
+			#init h1{
+
+				position: absolute;
+				left: 50%;
+				top: 50%;
+				transform: translate(-50%, -50%);
+
+			}
+
+			.white-box{
+
+				width: 60px;
+				height: 60px;
+				background: white;
+				position: absolute;
+				left: 50%;
+				bottom: 0;
+				transform: translate(-50%, 0);
+
+			}
+
+			.arrow-down{
+
+				position: absolute;
+				/*display: none;*/
+				width: 20px;
+				height: 20px;
+				border-right: solid black 3px;
+				border-bottom: solid black 3px;
+				transform: translate(-50%, 0) rotate(45deg);
+				left: 50%;
+				bottom: 70px;
+
+			}
+
+			.animation-up-down{
+
+				animation: MoveUpDown 1s ease-in-out infinite;
+
+			}
+
+			@keyframes MoveUpDown {
+			  	
+			  	0% {
+			    	bottom: 20px;
+			  	}
+			  	50% {
+			    	bottom: 30px;
+			  	}
+			  	100% {
+			    	bottom: 20px;
+			  	}
+
+			}
+
+			.grid{
+
+				background: white;
+
+			}
+
+			nav{
+	
+    			position: sticky !important;
+				top: 0;
+				left: 0;
+				border-bottom: solid 3px;
+				padding: 30px 20px 30px 20px;
+				background: white;
+				z-index: 100;
+
+			}
+
+			nav a{
+
+				color: black;
+				font-size: 25px;
+				font-weight: 600;
+
+			}
+
+			nav a:hover{
+
+				color: #B2B2B2;
+
+			}
+
+			nav .sections{
+
+				padding: 0;
+				margin: 0;	
+
+			}
+
+			nav .section{
+				
+				padding: 0;
+				text-align: right;
+
+			}
+
+			.contenu{
+
+				padding: 10px;
+				z-index: 10;
+				position: relative;
+				background: white;
+
+			}
+
+			.bloc{
+	
+				background: white;
+				font-size: 25px;
+				font-weight: 600;
+				padding: 10px;
+
+			}
+
+			.bloc img{
+
+				vertical-align: top;
+
+			}
+
+			.bloc .v-margin{
+
+				height: 20px;
+
+			}
+
+			.fin{
+
+				position: relative;
+				height: calc(100vh - 20px);
+				background-image: url("../imgs/placeholder.jpg");
+				background-size: 100% 100%;
+				background-position: 50%;
+
+			}
+
+			.fin h1{
+
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				-webkit-transform: translate(-50%, -50%);
+				-moz-transform: translate(-50%, -50%);
+				-o-transform: translate(-50%, -50%);
+				transform: translate(-50%, -50%);
+				color: white;
+
+			}
+
+		</style>
+
+    </head>
+    <body>
+
+		<div id="site">
+			
+		</div>
+    	<div class="section grid">
+    		
+			<!-- ************************* -->
+
+			<!-- INIT -->
+
+			<!-- ************************* -->
+	        
+			<div id="init">
+				
+				<h1>Exemple</h1>
+
+				<div class="white-box">
+					<div class="arrow-down animation-up-down"></div>
+				</div>
+
+			</div>
+
+		    <!-- ************************* -->
+
+			<!-- CREATION DU MENU -->
+
+			<!-- ************************* -->
+
+			<nav class="row">
+				
+				<div id="accueil" class="column four">
+
+					<a href="#">Accueil</a>
+
+				</div>
+
+				<div id="sections" class="column eight">
+					
+					<div class="section column three"><a href="#">Section 1</a></div>
+					<div class="section column three"><a href="#">Section 2</a></div>
+					<div class="section column three"><a href="#">Section 3</a></div>
+					<div class="section column three"><a href="#">Section 4</a></div>
+
+				</div>
+
+			</nav>
+
+			<div class="contenu">
+
+				<div class="row">
+
+					<div class="bloc column six">
+						<img src="../imgs/placeholder.jpg" alt="">
+					</div>
+					<!--  -->
+					<div class="bloc column six">
+						<img src="../imgs/placeholder.jpg" alt="">
+					</div>
+
+				</div>
+				
+				<div class="row">
+
+					<div class="bloc column four">
+						<p class="texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam error consectetur enim quidem, non odio nemo voluptatibus sed ad vel praesentium tenetur voluptas fugiat quo architecto repudiandae officia dolor eligendi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!</p>
+					</div>	
+
+					<div class="bloc column four">
+						<p class="texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam error consectetur enim quidem, non odio nemo voluptatibus sed ad vel praesentium tenetur voluptas fugiat quo architecto repudiandae officia dolor eligendi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!</p>
+					</div>	
+
+					<div class="bloc column four">
+						<p class="texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Totam error consectetur enim quidem, non odio nemo voluptatibus sed ad vel praesentium tenetur voluptas fugiat quo architecto repudiandae officia dolor eligendi!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!</p>
+					</div>				
+
+				</div>
+
+				<div class="row">
+
+					<div class="bloc column twelve">
+						<img src="../imgs/placeholder.jpg" alt="">
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="bloc column six">
+						<p class="texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!</p>
+					</div>
+
+					<div class="bloc column six">
+						<p class="texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="bloc column four">
+						<img src="../imgs/placeholder.jpg" alt="">
+					</div>
+					<!--  -->
+					<div class="bloc column four">
+						<img src="../imgs/placeholder.jpg" alt="">
+					</div>
+
+					<div class="bloc column four">
+						<img src="../imgs/placeholder.jpg" alt="">
+					</div>
+
+				</div>
+
+			</div>	
+
+    	</div>	
+
+    	<div class="section grid">
+    		
+    		<nav class="row">
+    			
+    			<div id="accueil" class="column four">
+
+					<a href="#">Section 1</a>
+
+				</div>
+
+    		</nav>
+
+			<div class="contenu">
+				
+				<div class="row">
+
+					<div class="bloc column four">
+						<p class="texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!</p>
+					</div>
+
+					<div class="bloc column four offset-four">
+						<p class="texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="bloc column four offset-four">
+						<p class="texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!</p>
+					</div>
+
+				</div>
+
+			</div>
+
+    	</div>
+
+    	<div class="section grid">
+    		
+    		<nav class="row">
+    			
+    			<div id="accueil" class="column four">
+
+					<a href="#">Section 2</a>
+
+				</div>
+
+    		</nav>
+
+			<div class="contenu">
+				
+				<div class="row">
+
+					<div class="bloc column four">
+						<p class="texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!</p>
+					</div>
+
+					<div class="bloc column four offset-four">
+						<p class="texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!</p>
+					</div>
+
+				</div>
+
+				<div class="row">
+
+					<div class="bloc column four offset-four">
+						<p class="texte">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo! Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempora, optio aut dolorum nostrum dignissimos vitae libero iste. Odio laboriosam rem consequatur libero ipsam deserunt, tempora, quisquam doloremque vel magni nemo!</p>
+					</div>
+
+				</div>
+
+			</div>
+
+    	</div>
+
+    	<div class="section grid">
+    		
+    		<div class="contenu">
+    			
+				<div class="row">
+
+					<div class="bloc column twelve fin">
+						<h1>Fin</h1>
+					</div>
+
+				</div>
+
+    		</div>
+
+    	</div>
+
+    </body>
+</html>

@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+
+		<meta name="author" content="" />
+		<meta name="description" content="" />
+		<meta name="keywords" content="" />
+
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+		<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/fonts.css" />
+		<link rel="stylesheet" type="text/css" href="css/basic.css" />
+		<link rel="stylesheet" type="text/css" href="css/grid.css" />
+		<link rel="stylesheet" type="text/css" href="css/main.css" />
+
+		<!--[if lt IE 9]>
+			<script src="js/html5shiv.js"></script>
+		<![endif]-->
+		<script src="js/jquery.min.js"></script>
+
+		<link rel="shortcut icon" type="image/png" href="imgs/favicon.png" />
+
+		<title>Title</title>
+	</head>
+
+	<body>
+		<!-- EXAMPLE -->
+		<div id="example" class="grid">
+			<div class="row">
+				<div class="column six">
+					Lorem ipsum dolor sit amet, <a href="#" id="showImg">consectetur</a> adipiscing elit. Aliquam ipsum justo, ultrices ac tincidunt vitae, vehicula eget quam. Nulla nibh nisi, cursus eget leo in, sollicitudin scelerisque velit. Nunc non molestie risus, at cursus neque. Suspendisse ut faucibus urna, in vulputate dui. Morbi tincidunt sodales viverra.
+				</div>
+				<div class="column six">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ipsum justo, ultrices ac tincidunt vitae, vehicula eget quam. Nulla nibh nisi, cursus eget leo in, sollicitudin scelerisque velit. Nunc non molestie risus, at cursus neque. Suspendisse ut faucibus urna, in vulputate dui. Morbi tincidunt sodales viverra.
+				</div>
+			</div>
+			<div class="row">
+				<div class="column two">
+					<img src="imgs/test.jpg">
+				</div>
+				<div class="column eight offset-two">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ipsum justo, ultrices ac tincidunt vitae, vehicula eget quam. Nulla nibh nisi, cursus eget leo in, sollicitudin scelerisque velit. Nunc non molestie risus, at cursus neque. Suspendisse ut faucibus urna, in vulputate dui. Morbi tincidunt sodales viverra.
+				</div>
+			</div>
+			<div class="row">
+				<div class="column five">
+					Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam ipsum justo, ultrices ac tincidunt vitae, vehicula eget quam. Nulla nibh nisi, cursus eget leo in, sollicitudin scelerisque velit. Nunc non molestie risus, at cursus neque. Suspendisse ut faucibus urna, in vulputate dui. Morbi tincidunt sodales viverra.
+				</div>
+				<div class="column seven">
+					<img src="imgs/test.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="column twelve">
+					<img src="imgs/test.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="column one">
+					<img src="imgs/test.jpg">
+				</div>
+				<div class="column two">
+					<img src="imgs/test.jpg">
+				</div>
+				<div class="column three">
+					<img src="imgs/test.jpg">
+				</div>
+				<div class="column four">
+					<img src="imgs/test.jpg">
+				</div>
+			</div>
+			<div class="row">
+				<div class="column one">
+					<img src="imgs/test.jpg">
+				</div>
+				<div class="column five">
+					<img src="imgs/test.jpg">
+				</div>
+				<div class="column three">
+					<img src="imgs/test.jpg">
+				</div>
+				<div class="column three l-hidden m-hidden">
+					<img src="imgs/test.jpg">
+				</div>
+			</div>
+		</div>
+
+		<div id="img" class="hidden">
+			<img src="imgs/test.jpg">
+		</div>
+
+		<!-- GRID DEBUG, ajouter/retirer la class "hidden" pour cacher/afficher  -->
+		<div id="debug" class="hidden">
+			<div class="grid">
+				<div class="row">
+					<div class="column one">
+						<div></div>
+					</div>
+					<div class="column one">
+						<div></div>
+					</div>
+					<div class="column one">
+						<div></div>
+					</div>
+					<div class="column one">
+						<div></div>
+					</div>
+					<div class="column one">
+						<div></div>
+					</div>
+					<div class="column one">
+						<div></div>
+					</div>
+					<div class="column one">
+						<div></div>
+					</div>
+					<div class="column one">
+						<div></div>
+					</div>
+					<div class="column one">
+						<div></div>
+					</div>
+					<div class="column one">
+						<div></div>
+					</div>
+					<div class="column one">
+						<div></div>
+					</div>
+					<div class="column one">
+						<div></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="js/utils.js"></script>
+
+		<img src="imgs/test.jpg">
+
+		<!-- CODE AVANCE -->
+
+		<script>
+			
+			getElements('img').forEach(function(element){
+
+				element.on('click', function(){
+
+					console.log(this);
+
+				});
+
+			});
+
+		</script>
+
+	</body>
+</html>
